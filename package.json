@@ -1,0 +1,22 @@
+{
+  "name": "glass-browser",
+  "version": "0.5.0",
+  "description": "A floating transparent desktop browser.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/mitchas/glass",
+  "keywords": [
+    "Floating",
+    "Browser",
+    "Windows"
+  ],
+  "author": "Mitch Samuels",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-rebuild": "^1.6.0"
+  },
+  "dependencies": {
+  }
+}

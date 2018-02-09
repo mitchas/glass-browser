@@ -1,0 +1,194 @@
+// main: '../app.scss'
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  // user-select: none;
+  &::-webkit-scrollbar { width: 0 !important }
+
+  &:hover,
+  &:focus,
+  &:active{
+      outline: none;
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0px;
+  padding: 2px;
+  font-family: $sans;
+  background-color: rgba(0,0,30,0.15);
+  overflow: hidden;
+  opacity: 0.95;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+
+// Webview
+// Webview
+// Webview
+#browserView{
+    display: block;
+    width: 100%;
+    // width: calc(100% + 22px) !important;
+    height: 100%;
+    height: calc(100vh - 40px) !important;
+    padding-top: 53px;
+    // height: 100vh !important;
+    z-index: 5;
+    background-color: white;
+
+    &.full-size{
+        height: 100vh !important;
+        padding-top: 0;
+    }
+}
+
+// App controls
+// App controls
+// App controls
+.app-controls{
+    display: flex;
+    position: fixed;
+    top: 42px;
+    left: 2px;
+    z-index: 1000000;
+    background-color: #1167f1;
+    background-color: rgba(30,30,50,1);
+    box-sizing: border-box;
+    padding: 0px 15px 0 0;
+    width: 100%;
+    width: calc(100% - 4px);
+    box-shadow: 0px 8px 8px 3px rgba(0,0,30,0.1);
+
+
+    #addressBar{
+        display: inline-flex;
+        flex-grow: 3;
+        margin: 0;
+        margin-right: 35px;
+
+        button{
+            display: inline-block;
+            background-color: transparent;
+            border: none;
+            transition: 0.2s;
+            img{
+                height: 20px;
+                padding: 14px 11px;
+                filter: invert(100%);
+                transition: 0.2s;
+            }
+
+            &:hover{
+                cursor: pointer;
+                transition: 0.2s;
+
+                img{
+                    transition: 0.2s;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        input{
+            display: inline-block;
+            width: 100%;
+            // width: 90%;
+            margin: 0;
+            font-size: 16px;
+            padding: 15px 15px 15px 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 2px;
+
+            color: white;
+            background-color: transparent;
+            background-color: rgba(255,255,255,0.1);
+        }
+    }
+
+    #transparencyRange{
+        width: 30%;
+        max-width: 30%;
+        min-width: 30%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+
+    #clickthroughButton{
+        display: inline-flex;
+        margin: 0;
+        transition: 0.2s;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        img{
+            height: 26px;
+            padding: 6px 0;
+            transition: 0.2s;
+            opacity: 1;
+            margin-left: 35px;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transition: 0.2s;
+
+            img{
+                transition: 0.2s;
+                opacity: 0.8;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+// RANGE STYLING BELOW
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 0px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: rgba(255,255,255, 1);
+  transition: 0.2s;
+  // background: rgba(0,0,30, 1);
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #1167f1;
+  background: linear-gradient(to right, #396afc, #2948ff);
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(255,255,255, 1);
+    transition: 0.2s;
+}
