@@ -1,4 +1,4 @@
-![N|Solid](https://raw.githubusercontent.com/mitchas/ffftp/master/assets/ui/icon64.png)
+![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/icon64.png)
 # **Glass Browser**
 A floating transparent browser for Windows.
   - Stays on top of other programs and apps.
