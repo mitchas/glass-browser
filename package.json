@@ -1,12 +1,12 @@
 {
-  "name": "glass-browser",
+  "name": "Glass Browser",
   "version": "0.5.0",
   "description": "A floating transparent desktop browser.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/mitchas/glass",
+  "repository": "https://github.com/mitchas/glass-browser",
   "keywords": [
     "Floating",
     "Browser",

@@ -25,6 +25,11 @@ $(document).ready(function () {
         changeOpacity(opacityValue);
     });
 
+    // Select all text when changing URL
+    $("input[type='text']").click(function () {
+       $(this).select();
+    });
+
 });
 
 
@@ -42,6 +47,17 @@ function changeOpacity(opacity){
 function loadURL(){
     var url = $("#urlField").val();
 
+    if(url.indexOf("http") >= 0){
+        loadPage(url);
+
+    }else{
+        url = "http://" + url;
+        loadPage(url);
+    }
+}
+
+function loadPage(url){
+    console.log("Loading " + url);
     if(url.indexOf("youtube") >= 0 || url.indexOf("YOUTUBE") >= 0 || url.indexOf("YouTube") >= 0){
         var youtubeID = url.substring(url.indexOf("v=") + 2);
         youtubeID = youtubeID.split('&')[0];
@@ -55,6 +71,8 @@ function loadURL(){
         webview.loadURL(url);
     }
 }
+
+
 
 
 // Go back

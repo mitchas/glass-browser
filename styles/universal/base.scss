@@ -35,15 +35,15 @@ body{
     width: 100%;
     // width: calc(100% + 22px) !important;
     height: 100%;
-    height: calc(100vh - 40px) !important;
-    padding-top: 53px;
+    height: calc(100vh - 78px) !important;
+    margin-top: 32px;
     // height: 100vh !important;
     z-index: 5;
     background-color: white;
 
     &.full-size{
         height: 100vh !important;
-        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -77,8 +77,8 @@ body{
             border: none;
             transition: 0.2s;
             img{
-                height: 20px;
-                padding: 14px 11px;
+                height: 16px;
+                padding: 8px 11px;
                 filter: invert(100%);
                 transition: 0.2s;
             }
@@ -100,7 +100,7 @@ body{
             // width: 90%;
             margin: 0;
             font-size: 16px;
-            padding: 15px 15px 15px 15px;
+            padding: 10px 15px 10px 15px;
             font-weight: 500;
             letter-spacing: 1px;
             box-sizing: border-box;
@@ -110,6 +110,10 @@ body{
             color: white;
             background-color: transparent;
             background-color: rgba(255,255,255,0.1);
+
+            &::selection {
+                background: rgba(255,255,255,0.2);
+            }
         }
     }
 
@@ -130,8 +134,8 @@ body{
         background-color: transparent;
 
         img{
-            height: 26px;
-            padding: 6px 0;
+            height: 24px;
+            padding: 0px 0;
             transition: 0.2s;
             opacity: 1;
             margin-left: 35px;
