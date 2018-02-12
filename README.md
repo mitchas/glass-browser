@@ -1,5 +1,7 @@
-![N|Solid](https://raw.githubusercontent.com/mitchas/ffftp/master/assets/ui/icon64.png)
+![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/icon64.png)
 # **Glass Browser**
+### Website: [mitch.works/apps/glass](http://mitch.works/apps/glass)
+
 A floating transparent browser for Windows.
   - Stays on top of other programs and apps.
   - Adjust transparency.
@@ -16,3 +18,10 @@ A floating transparent browser for Windows.
 - run `epi`
 - Follow steps
   - Icon is `./assets/icon.ico'
+
+## Using it
+- Enter a URL and hit >Enter
+- Resize and position the window where you want it.
+- Adjust transparency to your liking.
+- Click the eye to enable click-through mode. It will ignore mouse clicks and let you interact with windows below.
+- To disable click-through and interact with the window again, click the icon in the Windows dock/taskbar and minimize it, then click again to open it and it will be disabled.
