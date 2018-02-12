@@ -1,11 +1,14 @@
 ![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/icon64.png)
 # **Glass Browser**
-### Website: [mitch.works/apps/glass](http://mitch.works/apps/glass)
+### [Downloads](https://github.com/mitchas/glass-browser/tree/master/releases)
 
 A floating transparent browser for Windows.
   - Stays on top of other programs and apps.
   - Adjust transparency.
   - Click-through mode that ignores clicks and lets you interact with apps behind.
+
+![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/screenshot.png)
+
 
 ## Building & running it locally:
 - Clone the repo.
