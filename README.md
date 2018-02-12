@@ -7,7 +7,7 @@ A floating transparent browser for Windows.
   - Adjust transparency.
   - Click-through mode that ignores clicks and lets you interact with apps behind.
 
-![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/screenshot.png)
+![N|Solid](https://github.com/mitchas/glass-browser/raw/master/assets/screenshot.PNG)
 
 
 ## Building & running it locally:
