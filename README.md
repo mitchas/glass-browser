@@ -13,7 +13,7 @@ A floating transparent browser for Windows.
 - make sure electron is installed `npm install electron`
 - install and run with `npm install && npm start`
 
-## Packaging it (.app for mac, .exe for windows, or for linux)
+## Packaging it (.app for mac, .exe for windows, or for linux ** Untested on Mac and Linux)
 - Install [Electron Packager Interactive](https://github.com/Urucas/electron-packager-interactive) with `npm install -g electron-packager-interactive`
 - run `epi`
 - Follow steps
