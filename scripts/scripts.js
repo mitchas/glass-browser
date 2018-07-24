@@ -58,7 +58,7 @@ function loadURL(){
 
 function loadPage(url){
     console.log("Loading " + url);
-    if(url.indexOf("youtube") >= 0 || url.indexOf("YOUTUBE") >= 0 || url.indexOf("YouTube") >= 0){
+    if (url.toLowerCase().indexOf("youtube.com/watch") >= 0){
         var youtubeID = url.substring(url.indexOf("v=") + 2);
         youtubeID = youtubeID.split('&')[0];
         var youtubeURL = "https://www.youtube.com/embed/" + youtubeID;

@@ -28,3 +28,6 @@ A floating transparent browser for Windows.
 - Adjust transparency to your liking.
 - Click the eye to enable click-through mode. It will ignore mouse clicks and let you interact with windows below.
 - To disable click-through and interact with the window again, click the icon in the Windows dock/taskbar and minimize it, then click again to open it and it will be disabled.
+
+## Known Issues
+- Transparency seems to not be working on Linux - but it still floats above other windows.
